@@ -54,8 +54,9 @@ export default class NavbarLinks extends Component {
 const NavbarLinksWrapper = styled.ul`
   width: 100%;
   z-index: 999;
+  padding: 0.5rem 1rem;
   box-shadow: ${props =>
-    props.open ? "0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.4)" : "none"};
+    props.open ? "0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2)" : "none"};
   transition: ${styles.transitions.standard};
   height: ${props => (props.open ? "143.8px" : "0")};
   overflow: hidden;
@@ -66,12 +67,14 @@ const NavbarLinksWrapper = styled.ul`
     }
   }
   .nav-link {
+    transition: ${styles.transitions.standard};
     display: block;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    font-family: "Roboto";
-    text-transform: capitalize;
-    font-weight: 700;
+    font-family: "Staatliches";
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
     background: ${styles.colors.white};
     color: ${styles.colors.black};
     border-top: 1px solid ${styles.colors.grey};
@@ -81,7 +84,7 @@ const NavbarLinksWrapper = styled.ul`
     }
   }
   .active-nav-link {
-    color: ${styles.colors.secondary};
+    color: ${styles.colors.darkGrey};
   }
   position: absolute;
   @media (min-width: 768px) {
@@ -90,18 +93,23 @@ const NavbarLinksWrapper = styled.ul`
     box-shadow: none;
     height: auto;
     display: flex;
+    li:nth-of-type(1) > .nav-link {
+      margin-left: 0;
+    }
     .nav-link {
-      padding: 0.5rem 1rem;
-      color: ${styles.colors.black};
+      padding: 0.1rem 0.25rem;
+      margin-left: 1.5rem;
+      color: ${styles.colors.white};
       background: transparent;
       border-top: none;
+      border-bottom: 0.1rem solid transparent;
       &:hover {
         background: transparent;
-        color: ${styles.colors.darkGrey};
+        border-color: ${styles.colors.white};
       }
     }
     .active-nav-link {
-      color: ${styles.colors.secondary};
+      border-color: ${styles.colors.white};
     }
   }
 `
