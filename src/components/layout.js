@@ -2,13 +2,17 @@ import React from "react"
 import PropTypes from "prop-types"
 import { createGlobalStyle } from "styled-components"
 import Navbar from "./global/navbar/Navbar"
+import Footer from "./global/footer/Footer"
 
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Navbar />
-      {children}
+      <div id="container">
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
     </React.Fragment>
   )
 }
@@ -25,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
   }
   h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
+  }
+  #container {
+    min-height: 100vh;
+    position: relative;
   }
 `
 
