@@ -59,7 +59,7 @@ const NavbarLinksWrapper = styled.ul`
   box-shadow: ${props =>
     props.open ? "0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2)" : "none"};
   transition: ${styles.transitions.standard};
-  height: ${props => (props.open ? "147px" : "0")};
+  height: ${props => (props.open ? "153.4px" : "0")};
   overflow: hidden;
   li {
     list-style: none;
@@ -72,10 +72,9 @@ const NavbarLinksWrapper = styled.ul`
     display: block;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    font-family: "Staatliches";
-    letter-spacing: 0.1rem;
+    font-family: "Noto Sans";
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     background: ${styles.colors.white};
     color: ${styles.colors.black};
     border-top: 1px solid ${styles.colors.grey};
@@ -100,6 +99,7 @@ const NavbarLinksWrapper = styled.ul`
       margin-left: 0;
     }
     .nav-link {
+      transition: background 0s;
       padding: 0.1rem 0.25rem;
       margin-left: 1.5rem;
       color: ${styles.colors.white};

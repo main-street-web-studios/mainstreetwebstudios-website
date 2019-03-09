@@ -11,9 +11,9 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <NotFoundPageWrapper>
       <div id="404-main">
-        <h1>Oops!</h1>
         <h2>Error code 404</h2>
-        <p>The page you're trying to access doesn't exist.</p>
+        <h1>Oops..</h1>
+        <p>The page you're trying to access doesn't exist or has moved.</p>
       </div>
       <div id="btn-container-404">
         <Link to="/">
@@ -25,7 +25,7 @@ const NotFoundPage = () => (
 )
 
 const NotFoundPageWrapper = styled.div`
-  padding: 0 1.5rem;
+  padding: 1.5rem;
   max-width: 45rem;
   margin: 0 auto;
   display: flex;
@@ -39,7 +39,7 @@ const NotFoundPageWrapper = styled.div`
     /* line-height: 1.25; */
   }
   h2 {
-    font-family: "Roboto";
+    font-family: "Noto Sans";
     color: ${styles.colors.grey};
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -48,11 +48,14 @@ const NotFoundPageWrapper = styled.div`
   }
   p {
     font-family: "Noto Sans";
-    padding: 1rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
   }
   button {
     color: ${styles.colors.white};
     background: ${styles.colors.primary};
+    font-family: "Noto Sans";
+    font-weight: 700;
     &:hover {
       background: ${styles.colors.primaryDark};
     }

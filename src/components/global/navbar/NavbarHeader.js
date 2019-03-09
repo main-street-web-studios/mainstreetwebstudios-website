@@ -30,7 +30,7 @@ const NavbarHeaderWrapper = styled.div`
   position: relative;
   z-index: 1100;
   box-shadow: 0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2);
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

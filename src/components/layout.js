@@ -18,9 +18,10 @@ const Layout = ({ children }) => {
 }
 
 const GlobalStyle = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+  @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
   @import url("https://fonts.googleapis.com/css?family=Oswald");
   @import url("https://fonts.googleapis.com/css?family=Staatliches");
+  @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
   @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
   * {
     margin: 0;
