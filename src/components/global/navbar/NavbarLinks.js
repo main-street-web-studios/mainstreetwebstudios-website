@@ -52,6 +52,7 @@ export default class NavbarLinks extends Component {
 }
 
 const NavbarLinksWrapper = styled.ul`
+  background: ${styles.colors.white};
   width: 100%;
   z-index: 999;
   box-shadow: ${props =>
@@ -87,6 +88,7 @@ const NavbarLinksWrapper = styled.ul`
   }
   position: absolute;
   @media (min-width: 768px) {
+    background: none;
     width: auto;
     position: relative;
     box-shadow: none;
