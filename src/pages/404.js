@@ -15,9 +15,11 @@ const NotFoundPage = () => (
         <h2>Error code 404</h2>
         <p>The page you're trying to access doesn't exist.</p>
       </div>
-      <Link to="/">
-        <Button variant="contained">Go Home</Button>
-      </Link>
+      <div id="btn-container-404">
+        <Link to="/">
+          <Button variant="contained">Go Home</Button>
+        </Link>
+      </div>
     </NotFoundPageWrapper>
   </Layout>
 )
@@ -28,7 +30,9 @@ const NotFoundPageWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  #btn-container-404 {
+    text-align: center;
+  }
   h1 {
     font-family: "Oswald";
     font-size: 7rem;
