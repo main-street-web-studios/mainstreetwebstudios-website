@@ -54,11 +54,10 @@ export default class NavbarLinks extends Component {
 const NavbarLinksWrapper = styled.ul`
   width: 100%;
   z-index: 999;
-  padding: 0.5rem 1rem;
   box-shadow: ${props =>
     props.open ? "0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2)" : "none"};
   transition: ${styles.transitions.standard};
-  height: ${props => (props.open ? "143.8px" : "0")};
+  height: ${props => (props.open ? "147px" : "0")};
   overflow: hidden;
   li {
     list-style: none;
@@ -93,6 +92,7 @@ const NavbarLinksWrapper = styled.ul`
     box-shadow: none;
     height: auto;
     display: flex;
+    padding: 0.5rem 1rem;
     li:nth-of-type(1) > .nav-link {
       margin-left: 0;
     }
