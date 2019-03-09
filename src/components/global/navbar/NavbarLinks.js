@@ -29,7 +29,7 @@ export default class NavbarLinks extends Component {
     ],
   }
   render() {
-    const { open } = this.props
+    const { open, toggleMenu } = this.props
     const { links } = this.state
     return (
       <NavbarLinksWrapper open={open}>
@@ -40,6 +40,7 @@ export default class NavbarLinks extends Component {
                 activeClassName="active-nav-link"
                 to={link.path}
                 className="nav-link"
+                onClick={toggleMenu}
               >
                 {link.name}
               </Link>

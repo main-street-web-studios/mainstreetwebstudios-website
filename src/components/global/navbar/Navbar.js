@@ -21,7 +21,7 @@ export default class Navbar extends Component {
       <NavbarWrapper>
         <div id="navbar-content">
           <NavbarHeader open={open} toggleMenu={this.toggleMenu} />
-          <NavbarLinks open={open} />
+          <NavbarLinks open={open} toggleMenu={this.toggleMenu} />
         </div>
       </NavbarWrapper>
     )
