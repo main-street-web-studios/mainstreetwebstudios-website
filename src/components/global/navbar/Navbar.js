@@ -8,9 +8,9 @@ export default class Navbar extends Component {
     open: false,
   }
 
-  toggleMenu = (open = !this.state.open) => {
+  toggleMenu = () => {
     this.setState({
-      open,
+      open: !this.state.open,
     })
   }
 
@@ -18,7 +18,7 @@ export default class Navbar extends Component {
     const { open } = this.state
     return (
       <NavbarWrapper>
-        <NavbarHeader toggleMenu={this.toggleMenu} />
+        <NavbarHeader open={open} toggleMenu={this.toggleMenu} />
         <NavbarLinks open={open} />
       </NavbarWrapper>
     )
@@ -26,8 +26,13 @@ export default class Navbar extends Component {
 }
 
 const NavbarWrapper = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.4);
   }
 `
