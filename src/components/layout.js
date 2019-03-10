@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <div id="container">
         <Navbar />
-        {children}
+        <div style={{ height: "calc(100vh - 216px)" }}>{children}</div>
         <Footer />
       </div>
     </React.Fragment>
