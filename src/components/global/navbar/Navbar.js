@@ -23,7 +23,7 @@ export default class Navbar extends Component {
           <NavbarHeader open={open} toggleMenu={this.toggleMenu} />
           <NavbarLinks open={open} toggleMenu={this.toggleMenu} />
         </div>
-        <div id="overlay" />
+        <div id="overlay" onClick={this.toggleMenu} />
       </NavbarWrapper>
     )
   }
