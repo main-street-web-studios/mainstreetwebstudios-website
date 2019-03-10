@@ -72,69 +72,67 @@ export default class Form extends React.Component {
 
     return (
       <Form className="Contact" noValidate>
-        <MuiThemeProvider theme={theme}>
-          <form>
-            <TextField
-              id="name-input"
-              required
-              label="Name"
-              name="name"
-              className="text-field"
-              defaultValue={name}
-              onBlur={this.handleChange}
-              margin="normal"
-              variant="outlined"
-              autoComplete="false"
-            />
+        <form>
+          <TextField
+            id="name-input"
+            required
+            label="Name"
+            name="name"
+            className="text-field"
+            defaultValue={name}
+            onBlur={this.handleChange}
+            margin="normal"
+            variant="outlined"
+            autoComplete="false"
+          />
 
-            <TextField
-              id="email-input"
-              required
-              label="Email"
-              className="text-field"
-              type="email"
-              name="email"
-              defaultValue={email}
-              onBlur={this.handleChange}
-              margin="normal"
-              variant="outlined"
-            />
+          <TextField
+            id="email-input"
+            required
+            label="Email"
+            className="text-field"
+            type="email"
+            name="email"
+            defaultValue={email}
+            onBlur={this.handleChange}
+            margin="normal"
+            variant="outlined"
+          />
 
-            <TextField
-              id="phone-input"
-              label="Phone (optional)"
-              className="text-field"
-              defaultValue={phone}
-              onBlur={this.handleChange}
-              margin="normal"
-              name="phone"
-              variant="outlined"
-            />
+          <TextField
+            id="phone-input"
+            label="Phone (optional)"
+            className="text-field"
+            defaultValue={phone}
+            onBlur={this.handleChange}
+            margin="normal"
+            name="phone"
+            variant="outlined"
+          />
 
-            <TextField
-              id="outlined-multiline-static"
-              required
-              label="Message"
-              name="message"
-              multiline
-              rows="4"
-              defaultValue={message}
-              onBlur={this.handleChange}
-              className="text-field"
-              margin="normal"
-              variant="outlined"
-            />
+          <TextField
+            id="outlined-multiline-static"
+            required
+            label="Message"
+            name="message"
+            multiline
+            rows="4"
+            defaultValue={message}
+            onBlur={this.handleChange}
+            className="text-field"
+            margin="normal"
+            variant="outlined"
+          />
 
-            <Button
-              id="send-email-btn"
-              variant="contained"
-              type="submit"
-              onClick={this.handleSubmit}
-            >
-              Send Email
-            </Button>
-          </form>
-        </MuiThemeProvider>
+          <Button
+            id="send-email-btn"
+            variant="contained"
+            type="submit"
+            onClick={this.handleSubmit}
+          >
+            Send Email
+          </Button>
+        </form>
       </Form>
     )
   }
