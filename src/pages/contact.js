@@ -6,7 +6,7 @@ import Contact from "../components/contact/Contact"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Contact Us" keywords={[`gatsby`, `application`, `react`]} />
     <Contact />
   </Layout>
 )
