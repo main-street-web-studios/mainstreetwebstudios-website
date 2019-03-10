@@ -59,12 +59,11 @@ const NavbarLinksWrapper = styled.ul`
   box-shadow: ${props =>
     props.open ? "0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2)" : "none"};
   transition: ${styles.transitions.standard};
-  height: ${props => (props.open ? "9.57rem" : "0")};
+  height: ${props => (props.open ? "158.4px" : "0")};
   overflow: hidden;
   li {
     list-style: none;
     &:nth-of-type(1) > .nav-link {
-      border-top: none;
     }
   }
   .nav-link {
@@ -77,7 +76,7 @@ const NavbarLinksWrapper = styled.ul`
     font-weight: 700;
     background: ${styles.colors.white};
     color: ${styles.colors.black};
-    border-top: 1px solid ${styles.colors.grey};
+    border: 1px solid ${styles.colors.grey};
     transition: ${styles.transitions.standard};
     &:hover {
       background: ${styles.colors.lightGrey};
