@@ -57,6 +57,8 @@ export default class Footer extends Component {
 }
 
 const FooterWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
   width: 100%;
   background: ${styles.colors.black};
   color: ${styles.colors.lightGrey};

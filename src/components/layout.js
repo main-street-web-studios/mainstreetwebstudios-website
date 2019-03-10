@@ -9,8 +9,10 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <GlobalStyle />
       <div id="container">
-        <Navbar />
-        <div style={{ height: "calc(100vh - 216px)" }}>{children}</div>
+        <div id="nav-and-content">
+          <Navbar />
+          {children}
+        </div>
         <Footer />
       </div>
     </React.Fragment>
@@ -34,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
   #container {
     min-height: 100vh;
     position: relative;
+  }
+  #nav-and-content {
+    height: 100%;
+    padding-bottom: 160px;
   }
 `
 
