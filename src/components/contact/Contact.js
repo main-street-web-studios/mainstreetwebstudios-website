@@ -15,7 +15,7 @@ export default () => {
   `
 
   return (
-    <Contact className="Contact page">
+    <Contact>
       <div>
         <ContactHeader />
         <Form />
