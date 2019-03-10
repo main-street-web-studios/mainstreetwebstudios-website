@@ -23,6 +23,7 @@ export default class Navbar extends Component {
           <NavbarHeader open={open} toggleMenu={this.toggleMenu} />
           <NavbarLinks open={open} toggleMenu={this.toggleMenu} />
         </div>
+        <div id="overlay" onClick={this.toggleMenu} />
       </NavbarWrapper>
     )
   }
@@ -36,6 +37,16 @@ const NavbarWrapper = styled.nav`
   #navbar-content {
     max-width: 65rem;
     margin: 0 auto;
+  }
+  #overlay {
+    background: ${props =>
+      props.open ? "rgba(0, 0, 0, 0.4)" : "rgba(0, 0, 0, 0)"};
+    pointer-events: ${props => (props.open ? "auto" : "none")};
+    transition: ${styles.transitions.standard};
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
   }
   @media (min-width: 768px) {
     box-shadow: 0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2);

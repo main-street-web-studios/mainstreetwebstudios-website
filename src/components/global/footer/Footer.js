@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { styles } from "../../../utils"
-import { Button } from "@material-ui/core"
+// import { Button } from "@material-ui/core"
 import { Link } from "gatsby"
 
 export default class Footer extends Component {
@@ -9,17 +9,17 @@ export default class Footer extends Component {
     links: [
       {
         id: 0,
-        path: "/what-we-do",
+        path: "/what-we-do/",
         name: "what we do",
       },
       {
         id: 1,
-        path: "/story",
+        path: "/story/",
         name: "our story",
       },
       {
         id: 2,
-        path: "/contact",
+        path: "/contact/",
         name: "contact us",
       },
     ],
@@ -57,6 +57,8 @@ export default class Footer extends Component {
 }
 
 const FooterWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
   width: 100%;
   background: ${styles.colors.black};
   color: ${styles.colors.lightGrey};

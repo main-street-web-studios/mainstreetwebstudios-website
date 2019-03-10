@@ -13,17 +13,17 @@ export default class NavbarLinks extends Component {
       },
       {
         id: 1,
-        path: "/about",
+        path: "/about/",
         name: "about",
       },
       {
         id: 2,
-        path: "/work",
+        path: "/work/",
         name: "work",
       },
       {
         id: 4,
-        path: "/contact",
+        path: "/contact/",
         name: "contact",
       },
     ],
@@ -54,15 +54,18 @@ export default class NavbarLinks extends Component {
 
 const NavbarLinksWrapper = styled.ul`
   background: ${styles.colors.white};
-  height: 100vh;
+  width: 100%;
   z-index: 999;
   box-shadow: ${props =>
     props.open ? "0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2)" : "none"};
   transition: ${styles.transitions.standard};
-  width: ${props => (props.open ? "100%" : "0")};
+  height: ${props => (props.open ? "153.4px" : "0")};
   overflow: hidden;
   li {
     list-style: none;
+    &:nth-of-type(1) > .nav-link {
+      border-top: none;
+    }
   }
   .nav-link {
     transition: ${styles.transitions.standard};
@@ -71,9 +74,11 @@ const NavbarLinksWrapper = styled.ul`
     padding: 0.5rem 1rem;
     font-family: "Noto Sans";
     text-transform: uppercase;
+    text-align: right;
     font-weight: 700;
     background: ${styles.colors.white};
     color: ${styles.colors.black};
+    border-top: 1px solid ${styles.colors.grey};
     transition: ${styles.transitions.standard};
     &:hover {
       background: ${styles.colors.lightGrey};
@@ -99,6 +104,7 @@ const NavbarLinksWrapper = styled.ul`
       margin-left: 1.5rem;
       color: ${styles.colors.white};
       background: transparent;
+      border-top: none;
       border-bottom: 0.1rem solid transparent;
       &:hover {
         background: transparent;

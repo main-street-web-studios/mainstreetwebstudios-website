@@ -8,8 +8,10 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Navbar />
-      {children}
+      <div id="nav-and-content">
+        <Navbar />
+        <div id="page-content">{children}</div>
+      </div>
       <Footer />
     </React.Fragment>
   )
@@ -28,6 +30,24 @@ const GlobalStyle = createGlobalStyle`
   }
   h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
+  }
+  body {
+    position: relative;
+  }
+  #nav-and-content {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+  }
+  #page-content {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    > * {
+      flex: 1 1 0;
+    }
   }
 `
 
