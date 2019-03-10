@@ -10,6 +10,11 @@ export default class Navbar extends Component {
   }
 
   toggleMenu = () => {
+    if (this.state.open) {
+      document.querySelector("body").style.overflow = "scroll"
+    } else {
+      document.querySelector("body").style.overflow = "hidden"
+    }
     this.setState({
       open: !this.state.open,
     })
