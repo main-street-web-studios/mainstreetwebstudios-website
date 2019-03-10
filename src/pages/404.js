@@ -9,18 +9,20 @@ import { styles } from "../utils"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <NotFoundPageWrapper>
-      <div id="404-main">
-        <h2>Error code 404</h2>
-        <h1>Oops..</h1>
-        <p>The page you're trying to access doesn't exist or has moved.</p>
-      </div>
-      <div id="btn-container-404">
-        <Link to="/">
-          <Button variant="contained">Go Home</Button>
-        </Link>
-      </div>
-    </NotFoundPageWrapper>
+    <div>
+      <NotFoundPageWrapper>
+        <div id="404-main">
+          <h2>Error code 404</h2>
+          <h1>Oops..</h1>
+          <p>The page you're trying to access doesn't exist or has moved.</p>
+        </div>
+        <div id="btn-container-404">
+          <Link to="/">
+            <Button variant="contained">Go Home</Button>
+          </Link>
+        </div>
+      </NotFoundPageWrapper>
+    </div>
   </Layout>
 )
 
