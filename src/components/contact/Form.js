@@ -71,7 +71,7 @@ export default class Form extends React.Component {
     `
 
     return (
-      <Form className="Contact">
+      <Form className="Contact" noValidate>
         <MuiThemeProvider theme={theme}>
           <form>
             <TextField
