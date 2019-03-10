@@ -9,7 +9,7 @@ import { styles } from "../utils"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <NotFoundPageWrapper>
+    <NotFoundPageWrapper className="page">
       <div id="404-main">
         <h2>Error code 404</h2>
         <h1>Oops..</h1>

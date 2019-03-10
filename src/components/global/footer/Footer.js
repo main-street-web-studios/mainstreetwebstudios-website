@@ -32,8 +32,8 @@ export default class Footer extends Component {
         <div id="main">
           <ul className="nav">
             {links.map(link => (
-              <li className="nav">
-                <Link className="nav-link" to={link.path} key={link.id}>
+              <li className="nav" key={link.id}>
+                <Link className="nav-link" to={link.path}>
                   {link.name}
                 </Link>
               </li>

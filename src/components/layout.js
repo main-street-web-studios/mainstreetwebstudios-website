@@ -38,8 +38,13 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
   }
   #nav-and-content {
-    height: 100%;
+    min-height: 100vh;
     padding-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page {
+    flex: 1 1 0;
   }
 `
 
