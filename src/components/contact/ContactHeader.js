@@ -14,7 +14,7 @@ export default () => {
   `
 
   return (
-    <ContactHeader className="ContactHeader">
+    <ContactHeader>
       <h2>Contact Us</h2>
       <p>
         We would love to set up a time to talk about creating your new website.
