@@ -21,6 +21,7 @@ export default () => {
       background: #3a7;
       color: white;
       margin: 1rem 0;
+      padding: 0.75rem 0;
       font-family: "Noto Sans";
       font-weight: 700;
       &:hover {

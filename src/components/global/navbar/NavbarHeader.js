@@ -1,6 +1,10 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import { FaBars as MenuIcon, FaBuilding as LogoIcon } from "react-icons/fa"
+import {
+  FaBars as MenuIcon,
+  FaTimes as CloseIcon,
+  FaBuilding as LogoIcon,
+} from "react-icons/fa"
 import styled from "styled-components"
 import { styles } from "../../../utils"
 
@@ -19,7 +23,13 @@ export default class NavbarHeader extends Component {
             </h1>
           </div>
         </Link>
-        <MenuIcon id="menu-btn" onClick={toggleMenu} />
+        {(() => {
+          return open ? (
+            <CloseIcon className="btn" onClick={toggleMenu} />
+          ) : (
+            <MenuIcon className="btn" onClick={toggleMenu} />
+          )
+        })()}
       </NavbarHeaderWrapper>
     )
   }
@@ -52,8 +62,8 @@ const NavbarHeaderWrapper = styled.div`
       font-size: 1rem;
     }
   }
-  #menu-btn {
-    font-size: 1.25rem;
+  .btn {
+    font-size: 1.5rem;
     color: ${styles.colors.white};
     cursor: pointer;
     @media (min-width: 768px) {
