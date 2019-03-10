@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
   }
   #nav-and-content {
     min-height: 100vh;
-    padding-bottom: 160px;
+    padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
   }

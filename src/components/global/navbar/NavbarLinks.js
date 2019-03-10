@@ -59,7 +59,7 @@ const NavbarLinksWrapper = styled.ul`
   box-shadow: ${props =>
     props.open ? "0 0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2)" : "none"};
   transition: ${styles.transitions.standard};
-  height: ${props => (props.open ? "153.4px" : "0")};
+  height: ${props => (props.open ? "9.57rem" : "0")};
   overflow: hidden;
   li {
     list-style: none;
