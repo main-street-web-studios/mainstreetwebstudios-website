@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import { styles } from "../utils"
+import { FaCheckCircle as CheckIcon } from "react-icons/fa"
 
 const EmailSentPage = () => (
   <Layout>
@@ -12,7 +13,7 @@ const EmailSentPage = () => (
     <div>
       <EmailSentPageWrapper>
         <div id="email-sent-main">
-          {/*<h2>Error code 404</h2>*/}
+          {/*<CheckIcon id="icon" />*/}
           <h1>Thanks!</h1>
           <p>
             Your message is on its way to us! We'll get back to you as soon as
@@ -54,13 +55,9 @@ const EmailSentPageWrapper = styled.div`
     font-size: 7rem;
     /* line-height: 1.25; */
   }
-  h2 {
-    font-family: "Noto Sans";
+  #icon {
+    font-size: 2.5rem;
     color: ${styles.colors.grey};
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-size: 1rem;
   }
   p {
     font-family: "Noto Sans";
