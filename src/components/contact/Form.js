@@ -46,8 +46,10 @@ export default class Form extends React.Component {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
       }
       #send-email-btn {
+        width: 100%;
         background: #3a7;
         color: white;
         margin: 1rem 0;
@@ -59,12 +61,18 @@ export default class Form extends React.Component {
         }
       }
       .text-field {
+        width: 100%;
         background: white;
         border-radius: 0.25rem;
         input,
         textarea {
           text-align: left;
           font-family: "Noto Sans";
+        }
+      }
+      @media (min-width: 768px) {
+        #send-email-btn {
+          width: 13rem;
         }
       }
     `
