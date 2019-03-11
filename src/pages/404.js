@@ -59,7 +59,8 @@ const NotFoundPageWrapper = styled.div`
     font-family: "Noto Sans";
     font-weight: 700;
     font-size: 0.9rem;
-    padding: 0.75rem 4rem;
+    padding: 0.75rem 0;
+    width: 13rem;
     &:hover {
       background: ${styles.colors.primaryDark};
     }
