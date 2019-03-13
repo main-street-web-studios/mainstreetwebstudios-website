@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { styles } from "../../../utils"
-import { Button } from "@material-ui/core"
 import { Link } from "gatsby"
 
 export default class Footer extends Component {

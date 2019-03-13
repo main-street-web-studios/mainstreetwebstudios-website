@@ -3,6 +3,7 @@ module.exports = {
     title: `Main Street Web Studios`,
     description: `Main Street Web Studios' website built with Gatsby`,
     author: `Main Street Web Studios`,
+    siteUrl: `https://www.mainstreetwebstudios.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +14,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

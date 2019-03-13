@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import { styles } from "../utils"
-import { FaCheckCircle as CheckIcon } from "react-icons/fa"
+// import { FaCheckCircle as CheckIcon } from "react-icons/fa"
 
 const EmailSentPage = () => (
   <Layout>
