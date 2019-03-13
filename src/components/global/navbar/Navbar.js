@@ -3,7 +3,6 @@ import NavbarHeader from "./NavbarHeader"
 import NavbarLinks from "./NavbarLinks"
 import styled from "styled-components"
 import { styles } from "../../../utils"
-import disableScroll from "disable-scroll"
 
 export default class Navbar extends Component {
   state = {
@@ -17,9 +16,9 @@ export default class Navbar extends Component {
       },
       () => {
         if (this.state.open) {
-          disableScroll.on()
+          //this.body.style.overflowY = "hidden !important"
         } else {
-          disableScroll.off()
+          //this.body.style.overflowY = "scroll !important"
         }
       }
     )
