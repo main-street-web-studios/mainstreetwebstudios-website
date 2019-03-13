@@ -46,6 +46,7 @@ export default class NavbarLinks extends Component {
                 onClick={toggleMenu}
               >
                 <span
+                  className="nav-icon"
                   style={{
                     color: styles.colors.primary,
                     fontSize: "1.25rem",
@@ -130,6 +131,9 @@ const NavbarLinksWrapper = styled.ul`
     }
     .active-nav-link {
       border-color: ${styles.colors.white};
+    }
+    .nav-icon {
+      display: none;
     }
   }
 `

@@ -3,6 +3,7 @@ import NavbarHeader from "./NavbarHeader"
 import NavbarLinks from "./NavbarLinks"
 import styled from "styled-components"
 import { styles } from "../../../utils"
+import disableScroll from "disable-scroll"
 
 export default class Navbar extends Component {
   state = {
@@ -10,14 +11,18 @@ export default class Navbar extends Component {
   }
 
   toggleMenu = () => {
-    if (this.state.open) {
-      document.querySelector("body").style.overflowY = "scroll !important"
-    } else {
-      document.querySelector("body").style.overflowY = "hidden !important"
-    }
-    this.setState({
-      open: !this.state.open,
-    })
+    this.setState(
+      {
+        open: !this.state.open,
+      },
+      () => {
+        if (this.state.open) {
+          disableScroll.on()
+        } else {
+          disableScroll.off()
+        }
+      }
+    )
   }
 
   render() {
