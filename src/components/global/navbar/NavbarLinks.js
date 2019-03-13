@@ -95,7 +95,7 @@ const NavbarLinksWrapper = styled.ul`
     box-shadow: none;
     height: auto;
     display: flex;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     li:nth-of-type(1) > .nav-link {
       margin-left: 0;
     }
