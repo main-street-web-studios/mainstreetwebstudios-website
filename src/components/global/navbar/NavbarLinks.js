@@ -2,6 +2,9 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { styles } from "../../../utils"
+import { FaHome, FaInfoCircle, FaEnvelope, FaBriefcase } from "react-icons/fa"
+
+const icons = [<FaHome />, <FaInfoCircle />, <FaBriefcase />, <FaEnvelope />]
 
 export default class NavbarLinks extends Component {
   state = {
@@ -22,7 +25,7 @@ export default class NavbarLinks extends Component {
         name: "work",
       },
       {
-        id: 4,
+        id: 3,
         path: "/contact/",
         name: "contact",
       },
@@ -42,6 +45,15 @@ export default class NavbarLinks extends Component {
                 className="nav-link"
                 onClick={toggleMenu}
               >
+                <span
+                  style={{
+                    color: styles.colors.primary,
+                    fontSize: "1.25rem",
+                    margin: "0 0.75rem 0 1rem",
+                  }}
+                >
+                  {icons[link.id]}
+                </span>
                 {link.name}
               </Link>
             </li>
@@ -67,6 +79,7 @@ const NavbarLinksWrapper = styled.ul`
   overflow: hidden;
   li {
     list-style: none;
+    white-space: nowrap;
     &:nth-of-type(1) > .nav-link {
       border-top: none;
     }
@@ -75,10 +88,11 @@ const NavbarLinksWrapper = styled.ul`
     transition: ${styles.transitions.standard};
     display: block;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 0;
     font-family: "Noto Sans";
     text-transform: uppercase;
-    text-align: left;
+    display: flex;
+    align-items: center;
     font-weight: 700;
     background: ${styles.colors.white};
     color: ${styles.colors.black};
