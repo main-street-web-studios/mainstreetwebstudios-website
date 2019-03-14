@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.10.0",
     "body-scroll-lock": "^2.6.1",
     "email-validator": "^2.0.4",

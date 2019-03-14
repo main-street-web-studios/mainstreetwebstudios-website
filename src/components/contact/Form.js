@@ -5,6 +5,7 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import { navigate } from "gatsby"
 import { styles } from "../../utils"
 import * as emailValidator from "email-validator"
+import axios from "axios"
 
 const theme = createMuiTheme({
   palette: {
@@ -63,14 +64,7 @@ export default class Form extends React.Component {
   }
 
   validate = () => {
-    const {
-      name,
-      email,
-      message,
-      nameError,
-      emailError,
-      messageError,
-    } = this.state
+    const { name, email, phone, message } = this.state
     let isValid
     this.validateField("name", true)
     this.validateField("email", true)
@@ -80,6 +74,15 @@ export default class Form extends React.Component {
       this.validateField("email", true) &&
       this.validateField("message", true)
     if (isValid) {
+      axios
+        .post("https://formcarry.com/s/_xo6NaSoeyr", {
+          name,
+          email,
+          phone,
+          message,
+        })
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
       navigate("/email-sent/")
     }
   }
