@@ -47,6 +47,11 @@ const GlobalStyle = createGlobalStyle`
       flex: 1 1 0;
     }
   }
+  @media (min-width: 768px) {
+    body {
+      overflow-y: auto !important;
+    }
+  }
 `
 
 Layout.propTypes = {
