@@ -3,6 +3,11 @@ import NavbarHeader from "./NavbarHeader"
 import NavbarLinks from "./NavbarLinks"
 import styled from "styled-components"
 import { styles } from "../../../utils"
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from "body-scroll-lock"
 
 export default class Navbar extends Component {
   state = {
@@ -17,8 +22,10 @@ export default class Navbar extends Component {
       () => {
         if (this.state.open) {
           //this.body.style.overflowY = "hidden !important"
+          disableBodyScroll()
         } else {
           //this.body.style.overflowY = "scroll !important"
+          enableBodyScroll()
         }
       }
     )

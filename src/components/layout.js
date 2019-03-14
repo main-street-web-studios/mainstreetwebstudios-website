@@ -29,7 +29,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     position: relative;
     overflow-y: auto;
-    background: white
+    background: white;
+    overflow-x: hidden;
   }
   #nav-and-content {
     min-height: 100vh;
