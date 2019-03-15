@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     position: relative;
+    background: white;
     overflow-y: auto;
     overflow-x: hidden;
   }
