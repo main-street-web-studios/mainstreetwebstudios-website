@@ -5,8 +5,8 @@ export default () => {
   const OurMission = styled.section`
     font-family: "Noto Sans";
     margin-bottom: 0;
-    padding: 0 1.5rem;
-    padding-bottom: 2rem;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
     margin: 0 auto;
     max-width: 65rem;
     h2 {
