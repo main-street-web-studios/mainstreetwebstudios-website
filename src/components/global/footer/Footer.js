@@ -93,7 +93,7 @@ const FooterWrapper = styled.div`
   }
   #copyright {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-top: 1.5rem;
   }
 `
