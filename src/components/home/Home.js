@@ -5,6 +5,4 @@ export default () => {
   return <Home>e</Home>
 }
 
-const Home = styled.div`
-  background: #f7f7f7;
-`
+const Home = styled.div``

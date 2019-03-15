@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     position: relative;
     overflow-y: auto;
-    background: white;
     overflow-x: hidden;
   }
   #nav-and-content {
