@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
   #nav-and-content {
     min-height: 100vh;
     position: relative;
-    padding-bottom: 160px;
+    padding-bottom: 158px;
     display: flex;
     flex-direction: column;
   }

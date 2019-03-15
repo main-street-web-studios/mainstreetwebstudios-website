@@ -9,7 +9,7 @@ export default () => {
       font-family: "Oswald";
       font-size: 2rem;
       font-weight: 700;
-      padding: 0.5rem 0;
+      padding: 1rem 0;
       padding-top: 0;
     }
   `
