@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import { styles } from "../../utils"
+import { Button } from "@material-ui/core"
 
 export default () => {
   const OurMission = styled.section`
@@ -9,6 +11,8 @@ export default () => {
     padding-bottom: 2.5rem;
     margin: 0 auto;
     max-width: 65rem;
+    display: flex;
+    flex-direction: column;
     h2 {
       font-family: "Oswald";
       font-size: 2rem;
@@ -16,8 +20,22 @@ export default () => {
       padding: 1rem 0;
       padding-top: 0;
     }
-    p:nth-of-type(1) {
+    p {
       margin-bottom: 1rem;
+    }
+    #cta {
+      color: ${styles.colors.white};
+      background: ${styles.colors.primary};
+      font-family: "Noto Sans";
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.75rem 0;
+      margin: 0 auto;
+      margin-top: 0.75rem;
+      width: 100%;
+      &:hover {
+        background: ${styles.colors.primaryDark};
+      }
     }
   `
 
@@ -33,6 +51,9 @@ export default () => {
         It's our goal to allow every family-owned business to compete with the
         big corporations through the power of the internet.
       </p>
+      <Button id="cta" variant="contained">
+        Get Started
+      </Button>
     </OurMission>
   )
 }
