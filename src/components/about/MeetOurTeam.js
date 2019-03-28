@@ -5,10 +5,10 @@ import { Avatar, Paper } from "@material-ui/core"
 export default () => {
   const MeetOurTeam = styled.section`
     font-family: "Noto Sans";
-    padding: 1.5rem;
     padding-bottom: 2.5rem;
     background: #f5f5f5;
     #team-container {
+      padding: 1.5rem;
       max-width: 65rem;
       margin: 0 auto;
     }

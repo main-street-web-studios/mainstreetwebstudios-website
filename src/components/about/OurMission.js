@@ -37,6 +37,11 @@ export default () => {
         background: ${styles.colors.primaryDark};
       }
     }
+    @media (min-width: 768px) {
+      #cta {
+        width: 14rem;
+      }
+    }
   `
 
   return (
