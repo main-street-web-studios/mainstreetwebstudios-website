@@ -8,7 +8,7 @@ export default () => {
     font-family: "Noto Sans";
     margin-bottom: 0;
     padding: 1.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3.5rem;
     margin: 0 auto;
     max-width: 65rem;
     display: flex;
